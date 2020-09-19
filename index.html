@@ -12,13 +12,31 @@
     <style>
         body{
             background-color: black;
-            
+            margin: 0;
+            padding: 0;
              font-family:  "Segoe UI";
             
         }
         ::-webkit-scrollbar{
-     width: 5px;
+     width: 5px;}
+     #test{
+       margin-left: 115px;
+     }
+     #m{
+      position: absolute; 
+       left: 713px;
+       top:75px;
+     }
      
+     @media (max-width: 600px){
+       #test{
+         margin-left: 3px;
+       }
+       #m{
+        position: absolute;  
+        left: 0px;
+        top:75px;
+       }
  }
  ::-webkit-scrollbar-thumb{
      background-color: red;
@@ -28,31 +46,31 @@
   <body>
     <nav class="navbar navbar-expand-md px-0 mx-0 fixed-top">
       <div class="container">
-          <button class="navbar-toggler" data-toggle="collapse" data-target="#mainNav">
-              <span class="navbar-toggler-icon bg-light text-dark"></span>
+          <button class="navbar-toggler ml-auto" data-toggle="collapse" data-target="#mainNav">
+              <span class="navbar-toggler-icon bg-light text-dark float-xs-right"></span>
           </button>
           <div class="collapse navbar-collapse" id="mainNav">
             
-              <div class="navbar-nav px-0 mx-0" style="position: absolute; left: 108px;padding-top: 50px;">
-     <a class="nav-item nav-link active navbar-brand" href="index.html" style="color: rgb(230,43,30);">Home</a>
-      <a class="nav-item nav-link text-white navbar-brand" href="abt.html">About</a>
-      <a class="nav-item nav-link text-white navbar-brand" href="acad.html">Academics</a>
-      <a class="nav-item nav-link text-white navbar-brand" href="proj.html">Projects</a>
-      <a class="nav-item nav-link text-white navbar-brand " href="contacts.html"style="position: absolute;left: 1070px;" >Contact</a>
+              <div class="navbar-nav px-0 mx-0" >
+     <a class="nav-item nav-link active navbar-brand ml-auto" href="index.html" style="color: rgb(230,43,30);">Home</a>
+      <a class="nav-item nav-link text-white navbar-brand ml-auto" href="abt.html">About</a>
+      <a class="nav-item nav-link text-white navbar-brand ml-auto" href="acad.html">Academics</a>
+      <a class="nav-item nav-link text-white navbar-brand ml-auto" href="proj.html">Projects</a>
+      <a class="nav-item nav-link text-white navbar-brand ml-auto" href="contacts.html"style="position: absolute;left: 1070px;" >Contact</a>
     
   </div>
 </div>
 </div>
 </nav>
-    <div class="jumbotron jumbotron-fluid  " style="background-color:black;height:63px;margin-bottom: 155px;margin-left: 100px;padding-bottom: 0;padding-top: 20px;margin-right: 80px;">
+    <div class="jumbotron jumbotron-fluid  " style="background-color:black;height:63px;margin-bottom: 155px;margin-left: 0px;padding-bottom: 0;padding-top: 20px;margin-right: 80px;">
     
       
     
     </div>
-    <img src="slat.jpeg"   style="position: absolute;  left: 713px;top:75px;">
-    <div class="container" style="margin-left: 100px;">
-      <div class='row'  >
-      <h3 style="color: white;font-weight:500;font-size: 28px;margin-bottom: 1.0em;padding-bottom: 0;" class="col-10">Hi, I'm Mohit.</h3>
+    <img src="slat.jpeg"    id="m">
+    <div class="container"  id="test" >
+      <div class='row' >
+      <h3 style="color: white;font-weight:500;font-size: 28px;margin-bottom: 1.0em;padding-bottom: 0;"class="col-12">Hi, I'm Mohit.</h3>
 
     </div>
     <div class='row' >
@@ -64,16 +82,16 @@
 
     </div>
     <div class="row">
-      <p style="color: white;font-size: 21px;margin-bottom: 0;" class="col-10">Currently persuing B.Tech in Computer Engineering </p>
+      <p style="color: white;font-size: 21px;margin-bottom: 0;" class="col-10" >Currently persuing B.Tech in Computer Engineering </p>
     </div>
     <div class="row">
       <p style="color: white;font-size: 21px;" class="col-10">at Vishwakarma Institute of Technology, Pune. </p>
     </div>
     <div class="row">
-      <p style="color: white;font-size: 21px;" class="col-10">Food Enthusiast too. 🍔🍗 </p>
+      <p style="color: white;font-size: 21px;" class="col-10" >Food Enthusiast too. 🍔🍗 </p>
     </div>
     <div class="row">
-      <a style="color: rgb(230,43,30);font-size: 21px;padding-top: px;" class="col-10" href="abt.html"><p>Learn More ></p> </a>
+      <a style="color: rgb(230,43,30);font-size: 21px;" class="col-10" href="abt.html"><p>Learn More ></p> </a>
     </div>
     </div>
   
