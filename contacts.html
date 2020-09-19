@@ -21,24 +21,32 @@
         a,a:visited{
             color:whitesmoke;
         }
-        
+        #m{
+          height: 320px;width: 648px;border: 1px solid white;border-radius: 8px;
+        }
+        @media (max-width: 600px){
+          #m{
+            width: 391px;
+            height:max-content;
+          }
+        }
         </style>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
   <body>
     <nav class="navbar navbar-expand-md px-0 mx-0 fixed-top">
         <div class="container">
-            <button class="navbar-toggler" data-toggle="collapse" data-target="#mainNav">
+            <button class="navbar-toggler ml-auto" data-toggle="collapse" data-target="#mainNav">
                 <span class="navbar-toggler-icon bg-light text-dark"></span>
             </button>
             <div class="collapse navbar-collapse" id="mainNav">
               
-                <div class="navbar-nav px-0 mx-0" style="position: absolute; left: 108px;padding-top: 50px;">
-       <a class="nav-item nav-link text-white navbar-brand" href="index.html">Home</a>
-        <a class="nav-item nav-link text-white navbar-brand " href="abt.html"  >About</a>
-        <a class="nav-item nav-link text-white  navbar-brand  " href="acad.html" >Academics</a>
-        <a class="nav-item nav-link navbar-brand text-white" href="proj.html">Projects</a>
-        <a class="nav-item nav-link text-danger navbar-brand active" href="contacts.html"style="position: absolute;left: 1070px;" >Contact</a>
+                <div class="navbar-nav px-0 mx-0" >
+       <a class="nav-item nav-link text-white navbar-brand ml-auto" href="index.html">Home</a>
+        <a class="nav-item nav-link text-white navbar-brand ml-auto" href="abt.html"  >About</a>
+        <a class="nav-item nav-link text-white  navbar-brand ml-auto " href="acad.html" >Academics</a>
+        <a class="nav-item nav-link navbar-brand text-white ml-auto" href="proj.html">Projects</a>
+        <a class="nav-item nav-link text-danger navbar-brand active ml-auto" href="contacts.html"style="position: absolute;left: 1070px;" >Contact</a>
       
     </div>
   </div>
@@ -46,7 +54,7 @@
   </nav>
   <div class="jumbotron jumbotron-fluid  " style="background-color:black;height:40px;margin-bottom: 105px;margin-left: 100px;padding-bottom: 0;padding-top: 20px;margin-right: 80px;"></div>
 </div>
-<div style="height: 320px;width: 648px;border: 1px solid white;border-radius: 8px;" class="container text-white">
+<div class="container text-white"  id="m">
     <h1 style="margin-bottom: 40px;padding-top: 7px;">Contact</h1>
     <div class="row">
     <p class="col-2">Address : </p>
