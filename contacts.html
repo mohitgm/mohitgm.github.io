@@ -23,11 +23,17 @@
         }
         #m{
           height: 320px;width: 648px;border: 1px solid white;border-radius: 8px;
+          animation: i 2s;
         }
+       @keyframes i {
+       from {opacity: 0;}
+       to{ opacity: 1;}
+       
+     }
         @media (max-width: 600px){
           #m{
-            width: 391px;
-            height:max-content;
+            width: auto;
+            height:auto;
           }
         }
         </style>
